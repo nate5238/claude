@@ -23,3 +23,30 @@ garlic: {category: Produce}
 blueberries: {category: Produce}
 baby carrots: {category: Produce}
 honeycrisp apples: {category: Produce}
+# Recipes measure these in cloves/inches/pieces; buy one of each
+garlic: {category: Produce, cart_qty: 1}
+ginger: {category: Produce, cart_qty: 1}
+thai chiles: {category: Produce, cart_qty: 1}
+lemongrass: {category: Produce}
+butternut squash: {category: Produce}
+sage: {category: Produce}
+green beans: {category: Produce}
+cherry tomatoes: {category: Produce}
+shallot: {category: Produce}
+persian cucumbers: {category: Produce}
+carrots: {category: Produce}
+mung bean sprouts: {category: Produce}
+basil: {category: Produce}
+mint: {category: Produce}
+scallions: {category: Produce}
+italian sausages: {category: Meat & Seafood}
+half-and-half: {category: Dairy & Eggs}
+unsalted butter: {category: Dairy & Eggs}
+sheep's milk feta: {search: sheep's milk feta block, category: Dairy & Eggs}
+white miso: {category: Pantry}
+chickpeas: {search: 365 organic garbanzo beans can, category: Pantry}
+rice vermicelli: {category: Pantry}
+toasted seaweed sheets: {search: roasted seaweed nori sheets, category: Pantry}
+short-grain rice: {search: sushi rice, category: Pantry}
+roasted peanuts: {category: Pantry}
+natural peanut butter: {category: Pantry}

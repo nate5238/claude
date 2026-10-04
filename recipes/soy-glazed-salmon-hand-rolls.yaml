@@ -1,0 +1,18 @@
+name: Soy-Glazed Salmon Hand Rolls
+servings: 4
+tags: [dinner, fish]
+ingredients:
+  - {item: neutral oil, qty: 3, unit: tbsp}
+  - {item: garlic, qty: 1, unit: clove}  # 1/2 tsp minced
+  - {item: low-sodium soy sauce, qty: 0.33, unit: cup}
+  - {item: mirin, qty: 0.33, unit: cup}
+  - {item: granulated sugar, qty: 3, unit: tbsp}
+  - {item: black pepper, qty: 0.25, unit: tsp}
+  - {item: kosher salt, qty: 0.25, unit: tsp}
+  - {item: ginger, qty: 1, unit: inch}  # 1/2 tsp grated
+  - {item: salmon fillet, qty: 1.5, unit: lb}  # skinless, center-cut
+  - {item: toasted seaweed sheets, qty: 1, unit: package}
+  - {item: short-grain rice, qty: 1, unit: bag}
+  - {item: persian cucumbers, qty: 3, unit: count}
+  - {item: avocado, qty: 2, unit: count}
+notes: NYT Cooking, Kay Chun. 30 minutes. Reduce soy, mirin, sugar and garlic into a glaze; roast glazed salmon at 425°F about 10 min; flake and roll in seaweed with rice, cucumber and avocado. Optional - wasabi.

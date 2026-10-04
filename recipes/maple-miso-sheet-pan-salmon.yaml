@@ -1,0 +1,19 @@
+name: Maple and Miso Sheet-Pan Salmon With Green Beans
+servings: 4
+tags: [dinner, sheet-pan, fish]
+ingredients:
+  - {item: salmon fillet, qty: 1.5, unit: lb}  # 4 skin-on 6-oz fillets
+  - {item: kosher salt, qty: 1, unit: pinch}
+  - {item: black pepper, qty: 1, unit: pinch}
+  - {item: maple syrup, qty: 4, unit: tsp}
+  - {item: white miso, qty: 1, unit: tbsp}
+  - {item: rice vinegar, qty: 1, unit: tbsp}
+  - {item: soy sauce, qty: 2, unit: tsp}
+  - {item: garlic, qty: 1, unit: clove}
+  - {item: green beans, qty: 1, unit: lb}
+  - {item: olive oil, qty: 2, unit: tbsp}
+  - {item: red-pepper flakes, qty: 1, unit: pinch}
+  - {item: toasted sesame oil, qty: 0.25, unit: tsp}
+  - {item: cilantro, qty: 1, unit: bunch}
+  - {item: limes, qty: 1, unit: count}
+notes: NYT Cooking, Colu Henry. 20 minutes. Marinate salmon in maple, miso, vinegar, soy and garlic; roast with green beans at 400°F about 12 min. Optional - serve with rice and flaky salt.

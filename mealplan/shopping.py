@@ -16,6 +16,8 @@ _UNITS = {
     "lb": ("mass", 453.592),
     "ml": ("volume", 1.0),
     "l": ("volume", 1000.0),
+    "pinch": ("volume", 4.92892 / 16),
+    "dash": ("volume", 4.92892 / 8),
     "tsp": ("volume", 4.92892),
     "tbsp": ("volume", 14.7868),
     "fl oz": ("volume", 29.5735),
@@ -31,7 +33,7 @@ _ALIASES = {
     "ounce": "oz", "ounces": "oz", "lbs": "lb", "pound": "lb", "pounds": "lb",
     "milliliter": "ml", "milliliters": "ml", "liter": "l", "liters": "l",
     "teaspoon": "tsp", "teaspoons": "tsp", "tablespoon": "tbsp", "tablespoons": "tbsp",
-    "cups": "cup", "pints": "pint", "quarts": "quart", "gallons": "gallon",
+    "pinches": "pinch", "dashes": "dash", "cups": "cup", "pints": "pint", "quarts": "quart", "gallons": "gallon",
     "fluid ounce": "fl oz", "fluid ounces": "fl oz",
 }
 
@@ -52,7 +54,9 @@ def _display(dimension: str, base: float) -> tuple[float, str]:
         return base / 236.588, "cup"
     if base >= 14.7868:
         return base / 14.7868, "tbsp"
-    return base / 4.92892, "tsp"
+    if base >= 4.92892 / 4:
+        return base / 4.92892, "tsp"
+    return base / (4.92892 / 16), "pinch"
 
 
 @dataclass

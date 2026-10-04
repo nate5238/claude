@@ -1,0 +1,13 @@
+name: Sheet-Pan Feta With Chickpeas and Tomatoes
+servings: 4
+tags: [dinner, sheet-pan, vegetarian]
+ingredients:
+  - {item: chickpeas, qty: 2, unit: can}  # 15-oz cans, or 3 cups cooked
+  - {item: cherry tomatoes, qty: 2, unit: container}  # 2 pints, 16-20 oz
+  - {item: shallot, qty: 1, unit: count}
+  - {item: olive oil, qty: 0.25, unit: cup}
+  - {item: honey, qty: 2, unit: tbsp}
+  - {item: red-pepper flakes, qty: 0.5, unit: tsp}  # or 1 tsp gochugaru
+  - {item: kosher salt, qty: 1, unit: pinch}
+  - {item: sheep's milk feta, qty: 2, unit: block}  # 6-8 oz each; cow's milk feta doesn't roast well
+notes: NYT Cooking, Ali Slagle. 40 minutes. Toss everything on a sheet pan, nestle in sliced feta, roast at 400°F for 30-35 min. Serve with pita, grains, greens, hummus or yogurt.

@@ -1,0 +1,29 @@
+name: Cold Rice Noodles With Grilled Chicken and Peanut Sauce
+servings: 4
+tags: [dinner]
+ingredients:
+  # Dipping sauce, peanut dressing and marinade combined
+  - {item: fish sauce, qty: 7, unit: tbsp}
+  - {item: brown sugar, qty: 6, unit: tbsp}
+  - {item: limes, qty: 7, unit: count}  # 3/4 cup juice plus wedges
+  - {item: garlic, qty: 5, unit: clove}
+  - {item: thai chiles, qty: 8, unit: count}  # or 1-2 serranos
+  - {item: rice vinegar, qty: 2, unit: tbsp}
+  - {item: soy sauce, qty: 3, unit: tbsp}
+  - {item: ginger, qty: 2, unit: inch}
+  - {item: natural peanut butter, qty: 4, unit: tbsp}
+  - {item: toasted sesame oil, qty: 1, unit: tbsp}
+  - {item: cayenne, qty: 0.25, unit: tsp}
+  - {item: lemongrass, qty: 1, unit: stalk}
+  # Chicken and noodles
+  - {item: boneless skinless chicken thighs, qty: 1.25, unit: lb}
+  - {item: rice vermicelli, qty: 8, unit: oz}
+  - {item: persian cucumbers, qty: 2, unit: count}
+  - {item: carrots, qty: 1, unit: count}
+  - {item: mung bean sprouts, qty: 0.75, unit: cup}
+  - {item: basil, qty: 1, unit: bunch}
+  - {item: mint, qty: 1, unit: bunch}
+  - {item: cilantro, qty: 1, unit: bunch}
+  - {item: scallions, qty: 1, unit: bunch}
+  - {item: roasted peanuts, qty: 0.25, unit: cup}
+notes: NYT Cooking, David Tanis. About 45 minutes. Make dipping sauce and peanut dressing; marinate and grill chicken; soak vermicelli 7-8 min; top noodles with dressed vegetables, chicken, sauces, herbs, scallions and peanuts.

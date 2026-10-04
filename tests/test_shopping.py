@@ -48,6 +48,17 @@ class ShoppingListTest(unittest.TestCase):
         with self.assertRaises(KeyError):
             build_shopping_list(self.library, {"lasagna": 1}, {})
 
+    def test_pinch_merges_with_teaspoons(self):
+        items = self.by_name(
+            build_shopping_list(self.library, {"maple-miso-sheet-pan-salmon": 1, "sheet-pan-feta-with-chickpeas-and-tomatoes": 1}, {})
+        )
+        flakes = items["red-pepper flakes"]  # a pinch + 1/2 tsp
+        self.assertEqual((flakes.qty, flakes.unit), (0.56, "tsp"))
+
+    def test_garlic_cloves_buy_one_head(self):
+        items = self.by_name(build_shopping_list(self.library, {"cold-rice-noodles-with-chicken-and-peanut-sauce": 1}, {}))
+        self.assertEqual((items["garlic"].qty, items["garlic"].unit, items["garlic"].cart_qty), (5, "clove", 1))
+
     def test_unit_aliases(self):
         self.assertEqual(normalize_unit("Pounds"), "lb")
         self.assertEqual(normalize_unit("Tablespoons"), "tbsp")
