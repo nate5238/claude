@@ -1,0 +1,9 @@
+name: Overnight Oats
+servings: 4
+tags: [breakfast]
+ingredients:
+  - {item: rolled oats, qty: 2, unit: cup}
+  - {item: oat milk, qty: 2, unit: cup}
+  - {item: chia seeds, qty: 2, unit: tbsp}
+  - {item: blueberries, qty: 6, unit: oz}
+  - {item: maple syrup, qty: 2, unit: tbsp}

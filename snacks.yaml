@@ -1,0 +1,15 @@
+# Snacks are bought as-is: each entry is one or more grocery items.
+hummus-and-carrots:
+  name: Hummus & Carrots
+  items:
+    - {item: hummus, qty: 1, unit: count}
+    - {item: baby carrots, qty: 1, unit: lb}
+apples-and-pb:
+  name: Apples & Peanut Butter
+  items:
+    - {item: honeycrisp apples, qty: 4, unit: count}
+    - {item: peanut butter, qty: 1, unit: jar}
+trail-mix:
+  name: Trail Mix
+  items:
+    - {item: trail mix, qty: 1, unit: count}

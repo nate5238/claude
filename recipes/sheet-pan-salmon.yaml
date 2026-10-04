@@ -1,0 +1,10 @@
+name: Sheet Pan Salmon & Veggies
+servings: 2
+tags: [dinner]
+ingredients:
+  - {item: salmon fillet, qty: 12, unit: oz}
+  - {item: broccoli, qty: 1, unit: lb}
+  - {item: sweet potato, qty: 2, unit: count}
+  - {item: limes, qty: 1, unit: count}
+  - {item: olive oil, qty: 3, unit: tbsp}
+  - {item: garlic, qty: 1, unit: head}
