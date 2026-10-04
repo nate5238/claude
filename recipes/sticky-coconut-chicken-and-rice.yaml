@@ -1,0 +1,18 @@
+name: Sticky Coconut Chicken and Rice
+servings: 4
+tags: [dinner, one-pot]
+ingredients:
+  - {item: boneless skinless chicken thighs, qty: 1.5, unit: lb}
+  - {item: neutral oil, qty: 0.25, unit: cup}
+  - {item: kosher salt, qty: 2, unit: tsp}
+  - {item: black pepper, qty: 0.5, unit: tsp}
+  - {item: ginger, qty: 2, unit: inch}  # 2 tbsp minced
+  - {item: garlic, qty: 3, unit: clove}  # 1 tbsp minced
+  - {item: short-grain rice, qty: 1, unit: bag}  # 1 1/2 cups
+  - {item: low-sodium chicken broth, qty: 1.75, unit: cup}
+  - {item: full-fat coconut milk, qty: 1, unit: can}  # 13.5 oz
+  - {item: yellow bell pepper, qty: 1, unit: count}
+  - {item: roasted cashews, qty: 0.5, unit: cup}
+  - {item: scallions, qty: 1, unit: bunch}  # 3 scallions
+  - {item: cilantro, qty: 1, unit: bunch}
+notes: NYT Cooking, Kay Chun. 45 minutes. Brown chicken in a Dutch oven; sauté ginger and garlic, stir in rice, broth, coconut milk, bell pepper, cashews and scallions; top with chicken and bake covered at 375°F for 25 min. Serve with cilantro and hot sauce.
