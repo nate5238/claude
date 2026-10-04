@@ -12,7 +12,7 @@ ingredients:
   - {item: ginger, qty: 1, unit: inch}  # 1/2 tsp grated
   - {item: salmon fillet, qty: 1.5, unit: lb}  # skinless, center-cut
   - {item: toasted seaweed sheets, qty: 1, unit: package}
-  - {item: short-grain rice, qty: 1, unit: bag}
+  - {item: short-grain rice, qty: 1.5, unit: cup}  # for serving
   - {item: persian cucumbers, qty: 3, unit: count}
   - {item: avocado, qty: 2, unit: count}
 notes: NYT Cooking, Kay Chun. 30 minutes. Reduce soy, mirin, sugar and garlic into a glaze; roast glazed salmon at 425°F about 10 min; flake and roll in seaweed with rice, cucumber and avocado. Optional - wasabi.

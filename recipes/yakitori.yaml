@@ -9,5 +9,5 @@ ingredients:
   - {item: brown sugar, qty: 1, unit: tbsp}
   - {item: garlic, qty: 2, unit: clove}
   - {item: ginger, qty: 1, unit: inch}  # 1/2 tsp grated
-  - {item: scallions, qty: 1, unit: bunch}
+  - {item: scallions, qty: 0.5, unit: bunch}  # garnish
 notes: NYT Cooking, Melissa Clark. 15 minutes plus at least 1 hour marinating. Simmer sauce 7 min, reserve 2 tbsp, marinate chicken 1-4 hours; thread on skewers (soak wooden ones 1 hour) and grill or broil about 6 min for thighs. Needs skewers. Serve with rice and a cucumber salad.
