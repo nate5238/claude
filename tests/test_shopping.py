@@ -6,6 +6,12 @@ from mealplan.shopping import build_shopping_list, normalize_unit
 
 ROOT = Path(__file__).resolve().parent.parent
 
+NOODLES = "cold-rice-noodles-with-chicken-and-peanut-sauce"
+MISO_SALMON = "maple-miso-sheet-pan-salmon"
+FETA = "sheet-pan-feta-with-chickpeas-and-tomatoes"
+COCONUT = "sticky-coconut-chicken-and-rice"
+HAND_ROLLS = "soy-glazed-salmon-hand-rolls"
+
 
 class ShoppingListTest(unittest.TestCase):
     def setUp(self):
@@ -15,25 +21,33 @@ class ShoppingListTest(unittest.TestCase):
         return {i.item: i for i in shopping.items + shopping.pantry_check}
 
     def test_merges_same_item_across_recipes(self):
-        items = self.by_name(build_shopping_list(self.library, {"chicken-tacos": 1, "sheet-pan-salmon": 1}, {}))
-        self.assertEqual(items["limes"].qty, 3)
-        self.assertEqual(items["limes"].used_in, ["Chicken Tacos", "Sheet Pan Salmon & Veggies"])
+        items = self.by_name(build_shopping_list(self.library, {NOODLES: 1, MISO_SALMON: 1}, {}))
+        self.assertEqual(items["limes"].qty, 8)
+        self.assertEqual(
+            items["limes"].used_in,
+            ["Cold Rice Noodles With Grilled Chicken and Peanut Sauce", "Maple and Miso Sheet-Pan Salmon With Green Beans"],
+        )
 
     def test_batches_multiply_and_units_convert(self):
-        items = self.by_name(build_shopping_list(self.library, {"overnight-oats": 2}, {}))
-        self.assertEqual((items["rolled oats"].qty, items["rolled oats"].unit), (4, "cup"))
-        self.assertEqual((items["blueberries"].qty, items["blueberries"].unit), (12, "oz"))
-        self.assertEqual(items["chia seeds"].unit, "cup")  # 4 tbsp -> 0.25 cup
+        items = self.by_name(build_shopping_list(self.library, {MISO_SALMON: 2}, {}))
+        self.assertEqual((items["salmon fillet"].qty, items["salmon fillet"].unit), (3, "lb"))
+        self.assertEqual((items["green beans"].qty, items["green beans"].unit), (2, "lb"))
+        self.assertEqual(items["rice vinegar"].unit, "tbsp")
+
+    def test_cups_merge_into_one_package(self):
+        items = self.by_name(build_shopping_list(self.library, {COCONUT: 1, HAND_ROLLS: 1}, {}))
+        rice = items["short-grain rice"]
+        self.assertEqual((rice.qty, rice.unit, rice.cart_qty), (3, "cup", 1))
 
     def test_pantry_staples_are_kept_out_of_cart(self):
-        shopping = build_shopping_list(self.library, {"chicken-tacos": 1}, {})
+        shopping = build_shopping_list(self.library, {FETA: 1}, {})
         self.assertNotIn("olive oil", {i.item for i in shopping.items})
         self.assertIn("olive oil", {i.item for i in shopping.pantry_check})
 
     def test_product_pins_apply(self):
-        items = self.by_name(build_shopping_list(self.library, {"chicken-tacos": 1}, {}))
-        self.assertEqual(items["corn tortillas"].cart_qty, 1)
-        self.assertEqual(items["avocado"].cart_qty, 2)
+        items = self.by_name(build_shopping_list(self.library, {NOODLES: 1}, {}))
+        self.assertEqual(items["thai chiles"].cart_qty, 1)
+        self.assertEqual(items["persian cucumbers"].cart_qty, 2)
         self.assertEqual(items["boneless skinless chicken thighs"].category, "Meat & Seafood")
 
     def test_snacks_and_extras(self):
@@ -49,14 +63,12 @@ class ShoppingListTest(unittest.TestCase):
             build_shopping_list(self.library, {"lasagna": 1}, {})
 
     def test_pinch_merges_with_teaspoons(self):
-        items = self.by_name(
-            build_shopping_list(self.library, {"maple-miso-sheet-pan-salmon": 1, "sheet-pan-feta-with-chickpeas-and-tomatoes": 1}, {})
-        )
+        items = self.by_name(build_shopping_list(self.library, {MISO_SALMON: 1, FETA: 1}, {}))
         flakes = items["red-pepper flakes"]  # a pinch + 1/2 tsp
         self.assertEqual((flakes.qty, flakes.unit), (0.56, "tsp"))
 
     def test_garlic_cloves_buy_one_head(self):
-        items = self.by_name(build_shopping_list(self.library, {"cold-rice-noodles-with-chicken-and-peanut-sauce": 1}, {}))
+        items = self.by_name(build_shopping_list(self.library, {NOODLES: 1}, {}))
         self.assertEqual((items["garlic"].qty, items["garlic"].unit, items["garlic"].cart_qty), (5, "clove", 1))
 
     def test_unit_aliases(self):

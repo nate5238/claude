@@ -7,20 +7,20 @@ list that Claude (or a script) adds to your Whole Foods cart on Amazon.
 
 - **`recipes/`** — one YAML file per recipe:
   ```yaml
-  name: Chicken Tacos
+  name: Sheet-Pan Feta With Chickpeas and Tomatoes
   servings: 4
-  tags: [dinner]
+  tags: [dinner, sheet-pan, vegetarian]
   ingredients:
-    - {item: boneless skinless chicken thighs, qty: 1.5, unit: lb}
-    - {item: limes, qty: 2, unit: count}
+    - {item: chickpeas, qty: 2, unit: can}
+    - {item: olive oil, qty: 0.25, unit: cup}
   ```
 - **`snacks.yaml`** — snacks, each a list of items to buy.
 - **`pantry.yaml`** — staples you keep stocked; they go on a "check the pantry" list instead of the cart.
 - **`products.yaml`** — optional: pin an ingredient to a search phrase or exact product (`asin`),
   a store section (`category`), or a cart quantity (`cart_qty`).
 
-The three recipes and snacks included are examples — replace them with yours, or paste a recipe
-to Claude and ask it to add it.
+To add a recipe, send Claude the recipe (PDF, link or text) and ask it to add it. The snacks
+in `snacks.yaml` are examples; replace them with yours.
 
 ## Each week
 
@@ -34,7 +34,7 @@ delivery time.
 pip install -r requirements.txt
 python -m mealplan list
 python -m mealplan plan                      # interactive, or:
-python -m mealplan plan -r chicken-tacos -r overnight-oats:2 -s trail-mix -e "coffee beans"
+python -m mealplan plan -r yakitori -r maple-miso-sheet-pan-salmon:2 -s trail-mix -e "coffee beans"
 python -m mealplan cart                      # opens a browser; sign in to Amazon once
 ```
 

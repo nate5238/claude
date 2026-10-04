@@ -2,25 +2,19 @@
 # gets the same thing every week. `search` overrides the search phrase;
 # `asin` (the 10-char code in an Amazon product URL) adds that exact product.
 # `category` groups the shopping list by store section. `cart_qty` overrides
-# how many go in the cart (e.g. a recipe needs 12 tortillas but they come 30/pack).
+# how many go in the cart (e.g. a recipe needs 3 garlic cloves but you buy one head).
 boneless skinless chicken thighs:
   search: whole foods boneless skinless chicken thighs
   category: Meat & Seafood
 salmon fillet:
   search: whole foods atlantic salmon fillet
   category: Meat & Seafood
-corn tortillas: {category: Bakery, cart_qty: 1}  # 12 tortillas = one pack
-oat milk: {search: oatly oat milk, category: Dairy & Eggs}
 hummus: {category: Deli}
 # Produce
-yellow onion: {category: Produce}
 limes: {category: Produce}
 cilantro: {category: Produce}
 avocado: {category: Produce}
-broccoli: {category: Produce}
-sweet potato: {category: Produce}
 garlic: {category: Produce}
-blueberries: {category: Produce}
 baby carrots: {category: Produce}
 honeycrisp apples: {category: Produce}
 # Recipes measure these in cloves/inches/pieces; buy one of each
